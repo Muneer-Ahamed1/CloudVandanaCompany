@@ -1,0 +1,165 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(210, 201, 201);
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+}
+input::-webkit-input-placeholder{
+    color: black;
+}
+input::-moz-placeholder{
+    color: black;
+}
+input:-ms-input-placeholder{
+    color: black;
+}
+input::-ms-input-placeholder{
+    color: black;
+}
+input::placeholder{
+    color: black;
+}
+input:disabled{
+    color: black;
+}
+.wrap1{
+    width: 30%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 75% 25%;
+    grid-template-columns: 75% 25%;
+
+}
+
+.wrap2{
+    display: -ms-grid;
+    display: grid;
+    width: 30%;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#cal{ 
+    font-weight:400;
+    font-size: 2rem;
+    padding: 1.2rem;
+}
+.btn{
+    color: white;
+    text-align: center;
+    border: 0.6px solid; 
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+
+}
+.symbolBtn{
+    background-color: gray;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.symbolBtn:hover{
+    background-color: rgb(91, 87, 87);
+}
+.specialBtn{
+    background-color: black;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+
+}
+.specialBtn:hover{
+    background-color: rgba(0, 0, 0, 0.892) !important;
+   
+}
+
+.numberBtn{
+    background-color:black;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+
+}
+.numberBtn:hover{
+    background-color: rgba(0, 0, 0, 0.892);
+}
+
+@media screen and (max-width:1000px) {
+    .wrap1{
+        width: 60%;
+    }
+    .wrap2{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .wrap1{
+        width: 80%;
+    }
+    .wrap2{
+        width: 80%;
+    }
+    .btn{
+        padding: 1.5rem;
+
+    }
+    
+}
+@media screen and (max-width:425px) {
+
+    .wrap1{
+        width: 90%;
+    }
+    .wrap2{
+        width: 90%;
+    }
+    .btn{
+        padding: 1.5rem;
+    }
+    
+}
+@media screen and (max-width:425px) {
+
+    .wrap1{
+        width: 95%;
+    }
+    .wrap2{
+        width: 95%;
+    }
+    .btn{
+        padding: 1.7rem 1.5rem;
+    }
+    
+}

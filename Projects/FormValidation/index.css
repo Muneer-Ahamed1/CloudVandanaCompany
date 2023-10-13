@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap{
+    width: 100%;
+    margin: auto;
+
+    background-color: aqua;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+#title{
+    text-align: center;
+}
+.innerWrap{
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: lightblue;
+
+}
+.first, .second, .third, .fourth{
+    padding: 0.5rem;
+    border-bottom: 1px solid white;
+}
+.five{
+    padding: 0.5rem;
+
+}
+
+.first{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.element1{
+    width: 50%;
+}
+.element2{
+    width: 50%;
+}
+
+.error{
+    color: red;
+}
+#end{
+    text-align: center;
+    color: blue;
+}
+#end>span{
+    color: black;
+}
+.Modal{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+}
+.Modal-check{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+}
+.textArea{
+    border-bottom: 1px solid black;
+}
+
+@media screen and (max-width:1000px) {
+    .innerWrap{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .innerWrap{
+        width: 90%;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .element1{
+        width: 100%;
+    }
+    .element2{
+        width: 100%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .fourth>.formWrap{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+@media screen and (max-width:560px) {
+    .innerWrap{
+        padding: 10px;
+    }
+    
+}
+
+@media screen and (max-width:425px) {
+    .innerWrap{
+        padding: 10px;
+    }
+    .innerWrap{
+        width: 100%;
+    }
+    
+}
