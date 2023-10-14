@@ -38,7 +38,7 @@ html,body{
     background-color: lightblue;
 
 }
-.first, .second, .third, .fourth{
+.form-group{
     padding: 0.5rem;
     border-bottom: 1px solid white;
 }
@@ -77,7 +77,7 @@ html,body{
     border-bottom: 1px solid black;
 
 }
-.Modal-check{
+.Modal-check, .Modal-Select{
     padding: 0.5rem;
     display: flex;
     justify-content: space-between;
@@ -107,6 +107,7 @@ html,body{
     }
     .element1{
         width: 100%;
+        border-bottom: 1px solid white;
     }
     .element2{
         width: 100%;
@@ -116,7 +117,7 @@ html,body{
         flex-direction: column;
         gap: 0.7rem;
     }
-    .fourth>.formWrap{
+    .formWrap{
         display: flex;
         flex-direction: column;
 
