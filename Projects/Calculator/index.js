@@ -12,8 +12,10 @@ arr1.forEach((val)=>{
         btn.className="numberBtn"
     }
     if(val=="*") {
+      
+
+
         btn.textContent="X"
-        btn.classList.add("specialBtn")
     }
     if(val=="=") {
         btn.classList.add("specialBtn")
@@ -32,6 +34,7 @@ const cal=document.getElementById("cal");
 Array.from(document.getElementsByClassName("btn")).map((vl)=>{
     vl.addEventListener("click",(e)=>{
         if(cal.value.length==0 && e.target.classList.contains("numberBtn")){
+            console.log(cal.value);
             cal.value=e.target.value+"";
         }
         else if(e.target.value=="=") {
